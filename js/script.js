@@ -45,3 +45,27 @@ function priceCalc(){
         document.getElementById('subtitle').innerText = ``;
     }
 }
+
+/* What's written on the ticket? */
+
+function printTicket(){
+    let fullName = document.getElementById('fullName').value;
+    let kilometres = document.getElementById('kilometres').value;
+    let age = document.getElementById('age').value;
+
+    let ticketCode = fullName.charAt(0) + fullName.charAt(1) + fullName.charAt(2);
+    ticketCode = ticketCode.toUpperCase();
+    ticketCode += age;
+    ticketCode += kilometres;
+
+    document.getElementById('nameOutput').innerText = fullName;
+    document.getElementById('codeOutput').innerText = ticketCode;
+
+    let carriageOutput = Math.floor(Math.random() * 12) + 1; 
+    let emailDate = new Date();
+
+    emailDate =`${emailDate.getDate()}/${emailDate.getMonth()+1}/${emailDate.getFullYear()}`;
+
+    document.getElementById('carriageOutput').innerText = carriageOutput;
+    document.getElementById('emailDate').innerText = emailDate;
+}

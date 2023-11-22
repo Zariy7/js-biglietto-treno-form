@@ -12,12 +12,20 @@
         <div class="container">
             <form class="my-2">
                 <div>
+                    <label for="fullName" class="form-label">Qual'&egrave; il tuo nome completo?</label>
+                    <input type="text" class="form-control" id="fullName" name="fullName">
+                </div>
+                <div>
                     <label for="kilometres" class="form-label">Quanti kilometri vuoi percorrere?</label>
                     <input type="text" class="form-control" id="kilometres" name="kilometres">
                 </div>
                 <div>
                     <label for="age" class="form-label">Quanti anni hai?</label>
                     <input type="text" class="form-control" id="age" name="age">
+                </div>
+                <div>
+                    <label for="email" class="form-label">A che email possiamo contattarti?</label>
+                    <input type="email" class="form-control" id="email" name="email">
                 </div>
                 
                 <button type="button" class="btn btn-primary my-3" onClick="sanityCheck() && priceCalc()">Invia</button>
@@ -27,6 +35,37 @@
             </h3>
             <h6 id="subtitle">
             </h6>
+            <button type="button" class="btn btn-success my-3" onClick="printTicket()">Stampa Biglietto</button>
+        </div>
+
+        <div class="bg-danger my-2 py-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 bg-light border border-3 border-dark">
+                        <div>
+                            <h4 class="my-3">Dettaglio Viaggio</h4>
+                            <div class="row my-3">
+                                <div class="col-3">
+                                    <h5>Nome Passeggero</h5>
+                                    <div id="nameOutput"></div>
+                                </div>
+                                <div class="col-3">
+                                    <h5>Codice Viaggio</h5>
+                                    <div id="codeOutput"></div>
+                                </div>
+                                <div class="col-3">
+                                    <h5>Carrozza</h5>
+                                    <div id="carriageOutput"></div>
+                                </div>
+                                <div class="col-3">
+                                    <h5>Email inviata il:</h5>
+                                    <div id="emailDate"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <script type="text/javascript" src="./js/script.js"></script>
     </body>
