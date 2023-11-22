@@ -22,7 +22,7 @@ function priceCalc(){
     let price = priceKmRatio * kilometres;
     let priceDiscountMultiplier = 1;
     
-    if(age <= 18 || age >= 65){
+    if(age <= 17 || age >= 65){
         if(age <= 18){
             priceDiscountMultiplier = 0.80;
         }
@@ -44,6 +44,8 @@ function priceCalc(){
         document.getElementById('price').style.color = 'blue';
         document.getElementById('subtitle').innerText = ``;
     }
+
+    return true;
 }
 
 /* What's written on the ticket? */
