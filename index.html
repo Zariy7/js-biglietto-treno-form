@@ -38,26 +38,34 @@
             <button type="button" class="btn btn-success my-3" onClick="printTicket()">Stampa Biglietto</button>
         </div>
 
-        <div class="bg-danger my-2 py-3" id="ticketContainer">
+        <div class="bg-danger my-2 py-3 d-none" id="ticketContainer">
             <div class="container">
                 <div class="row">
                     <div class="col-12 bg-light border border-3 border-dark">
                         <div>
                             <h4 class="my-3">Dettaglio Viaggio</h4>
                             <div class="row my-3">
-                                <div class="col-3">
-                                    <h5>Nome Passeggero</h5>
+                                <div class="col-2">
+                                    <h5 >Nome Passeggero</h5>
                                     <div id="nameOutput"></div>
                                 </div>
-                                <div class="col-3">
+                                <div class="col-2">
+                                    <h5>Et&agrave;</h5>
+                                    <div id="ageOutput"></div>
+                                </div>
+                                <div class="col-2">
+                                    <h5>Distanza Viaggio</h5>
+                                    <div id="kmOutput"></div>
+                                </div>
+                                <div class="col-2">
                                     <h5>Codice Viaggio</h5>
                                     <div id="codeOutput"></div>
                                 </div>
-                                <div class="col-3">
+                                <div class="col-2">
                                     <h5>Carrozza</h5>
                                     <div id="carriageOutput"></div>
                                 </div>
-                                <div class="col-3">
+                                <div class="col-2">
                                     <h5>Email inviata il:</h5>
                                     <div id="emailDate"></div>
                                 </div>

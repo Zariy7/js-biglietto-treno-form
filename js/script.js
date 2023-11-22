@@ -68,5 +68,8 @@ function printTicket(){
 
     document.getElementById('carriageOutput').innerText = carriageOutput;
     document.getElementById('emailDate').innerText = emailDate;
-    document.getElementById('ticketContainer').style.display = 'block';
+    document.getElementById('kmOutput').innerText = kilometres + ' km';
+    document.getElementById('ageOutput').innerText = age;
+
+    document.getElementById('ticketContainer').classList.replace("d-none", "d-block");
 }
