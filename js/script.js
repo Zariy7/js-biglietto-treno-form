@@ -68,4 +68,5 @@ function printTicket(){
 
     document.getElementById('carriageOutput').innerText = carriageOutput;
     document.getElementById('emailDate').innerText = emailDate;
+    document.getElementById('ticketContainer').style.display = 'block';
 }
